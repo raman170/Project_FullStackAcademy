@@ -9,6 +9,8 @@ import "./Home.css";
 import "./LearnMore";
 import "./Home";
 import "./c";
+import "./Tutorial";
+import "./Contact";
 
 const Home = () => {
   return (
@@ -20,7 +22,7 @@ const Home = () => {
     <div className="logo">
       <ul>
         <li> <Link to="/Home" className="logo-link">FullStackAcademy</Link> {/* Ensure correct path */}</li>
-        <li><a href="#">Tutorials</a></li>
+        <li><a href="/Tutorial">Tutorials</a></li>
         <li><a href="#">Exercises</a></li>
         <li><a href="./LearnMore">Services</a></li>
       </ul>
@@ -85,7 +87,7 @@ const Home = () => {
         <div className="sign-up-form">
           <input type="email" placeholder="Email Address" />
           <input type="password" placeholder="Password" />
-          <button type="submit" className="btn sign-up-btn"><a href="/home">Sign Up</a></button>
+          <button type="submit" className="btn sign-up-btn"><a href="/signup">Sign Up</a></button>
         </div>
       </section>
 
@@ -103,7 +105,7 @@ const Home = () => {
       {/* Footer */}
       <footer className="footer">
         <div className="footer-links">
-          <a href="#">Contact Us</a>
+          <a href="/Contact">Contact Us</a>
           <a href="#">About Us</a>
         </div>
         <p>© 2025 FullStackAcademy. All rights reserved.</p>

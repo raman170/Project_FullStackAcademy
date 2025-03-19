@@ -10,6 +10,8 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import "./App.css";
 import LearnMore from "./LearnMore";
 import CTutorial from "./c";
+import Tutorial from "./Tutorial";
+import Contact from "./Contact";
 
 const App = () => {
   const [user] = useAuthState(auth);
@@ -24,6 +26,8 @@ const App = () => {
         <Route path="/home" element={user ? <Home /> : <Navigate to="/" />} /> {/* Route should match */}
         <Route path="/learnmore" element={<LearnMore />} />
         <Route path="/c" element={<CTutorial />} />
+        <Route path="/Tutorial" element={<Tutorial />} />
+        <Route path="/Contact" element={<Contact />} />
       </Routes>
     </Router>
   );
